@@ -1,8 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const propertiesController = require('./controllers/propertiesController');
-
-router.get('/properties', propertiesController.index);
+router.get('/properties', require('./controllers/propertiesController').index);
+router.get('/propertiesRoutes', require('./controllers/propertiesRoutesController').index);
 
 module.exports = router;

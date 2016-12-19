@@ -3,16 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "gt": "AIzaSyBOZaFJMwlSG08Xm70_WuvVGLbgBqoDsd8",
   "scripts": {
     "start": "node ./index",
     "test": "mocha ./tests/**/*.test.js",
-    "dev-server": "nodemon ./app"
+    "dev-server": "nodemon ./index"
   },
   "author": "Daniel Stenger",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.1",
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "request": "^2.79.0",
+    "request-promise": "^4.1.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
